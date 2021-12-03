@@ -1,6 +1,6 @@
-# vue_element_express
+# simple_VueElementExpress
 
-> A Vue.js project
+> 基于vue.js兼容IE的展示项目
 
 ## Build Setup
 
