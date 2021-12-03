@@ -1,0 +1,31 @@
+<div style="height:100%;width:100%;">
+  <!-- set progressbar -->
+  <vue-progress-bar></vue-progress-bar>
+  <div class="language_layout" style="z-index: 9999">
+    <span id="zh" @click="changeLanguage('zh')">中文</span>|
+    <span id="en" @click="changeLanguage('en')">English</span>
+  </div>
+  <div class="login-layout">
+      <div class="dialog">
+        <div>
+          <el-form class="form-signin" ref="form" :model="formInline" :rules="ruleInline" label-width="0"
+            v-loading="loading" element-loading-background="rgba(0, 0, 0, 0.6)">
+            <el-form-item label="" prop="account">
+              <el-input auto-complete="off" v-model="formInline.account" placeholder="用户名" :autofocus="true"
+               @keyup.enter.native="handleSubmit" prefix-icon="fa-user-o">
+              </el-input>
+            </el-form-item>
+            <el-form-item label="" prop="password" :error="loginError">
+              <el-input auto-complete="off" type="password" v-model="formInline.password" placeholder="密码"
+              @keyup.enter.native="handleSubmit" prefix-icon="fa-key">
+              </el-input>
+            </el-form-item>
+            <el-form-item style="margin-top:28px;" class="form_login_btn">
+              <el-button class="btn-long btn-login" type="submit" @click="handleSubmit" >登录</el-button>
+            </el-form-item>
+          </el-form>
+        </div>
+      </div>
+  </div>
+</div>
+

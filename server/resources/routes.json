@@ -1,0 +1,21 @@
+[{
+  "name" : "index",
+  "class" : "index",
+  "mapping": "/"
+}, {
+  "name" : "api",
+  "class" : "api",
+  "mapping": "/api"
+}, {
+  "name" : "askme",
+  "class" : "askme",
+  "mapping": "/askme"
+}, {
+  "name" : "login",
+  "class" : "login",
+  "mapping": "/login"
+}, {
+  "name" : "userinfo",
+  "class" : "userinfo",
+  "mapping": "/userinfo"
+}]

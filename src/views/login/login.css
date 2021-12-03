@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  /* color: #FFFFFF; */
+  padding: 0;
+  margin: 0;
+}
+
+.login-layout {
+  height: 100%;
+  width: 100%;
+  background-color: #001038;
+  padding-top: 0;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: #fff;
+  position: absolute;
+}
+
+.dialog {
+  width: 500px;
+  min-height: 300px;
+  background: url(../../assets/image/login/dialog_bg.png) repeat;
+  border: 1px solid #09438d;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 250px);
+  margin: 0 auto;
+}
+
+/*=======icos=======*/
+.form-signin {
+  width: 438px;
+  margin: auto;
+  margin-top: 18px
+}
+
+.form-signin .el-form-item {
+  margin-bottom: 20px
+}
+
+.form-signin .el-input-group__prepend,
+.form-signin .el-input__inner {
+  color: #fff;
+  background: url(../../assets/image/login/input_bg.png) repeat 50%;
+  border: 0;
+  height: 38px;
+  border-radius: 0;
+  font-weight: 600
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: transparent;
+  background-image: none;
+  color: #fff
+}
+
+.form-signin .el-form-item__content {
+  border: 1px solid #0084ff;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 0
+}
+
+.form-signin .el-button {
+  width: 100%;
+  height: 100%;
+  background: #0084ff;
+  color: #fff;
+  border: 0px solid #0084ff;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 16px
+}
+
+.form-signin .el-button:focus,
+.form-signin .el-button:hover {
+  color: #fff;
+  border: 0 solid #129cf4;
+  background: #129cf4
+}
+
+.form-signin .el-button:active {
+  color: #129cf4;
+  border: 0 solid #129cf4;
+  border-color: #129cf4;
+  outline: 0
+}
+
+.form-signin .el-button::-moz-focus-inner {
+  border: 0
+}
+
+.form_login_btn .el-form-item__content {
+  border: 1px solid #0084ff
+}
+
+.form-signin .el-form-item__error {
+  padding-top: 10px
+}
+
+.language_layout {
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  color: #fff
+}
+
+.language_layout span {
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.login-verifycode {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  top: 0;
+  height: 38px;
+  background-color: #fff;
+}
+
+.authtype-content .el-form-item__content {
+  border: 1px solid transparent;
+  text-align: left;
+}
+
+.authtype-content .el-radio__label {
+  color: #fff;
+}

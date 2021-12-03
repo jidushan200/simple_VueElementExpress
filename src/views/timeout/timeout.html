@@ -1,0 +1,17 @@
+<div style="height:100%;width:100%;">
+  <div class="jump_layout">
+    <div class="jump_location">
+      <div class="jump_panel">
+      <div class="jump_info">
+         <p v-if="timeoutFlg" style="padding-top: 18px;">发生错误，正在跳转，请等待</p>
+         <span v-if="timeoutFlg" style="margin-left:182px;">{{time}}s</span>
+         <span v-if="timeoutFlg" @click="quickEnter" class="jump-now">立即跳转</span>
+         <div v-if="timeoutFlg">
+            <p style="padding-top: 10px;">错误页</p>
+         </div>
+      </div>
+      </div>
+    </div>    
+  </div>
+</div>
+
